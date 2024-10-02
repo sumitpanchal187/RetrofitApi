@@ -18,6 +18,7 @@ import com.squareup.picasso.Picasso
 
 class DetailFragment : Fragment() {
 
+
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
 
@@ -26,7 +27,7 @@ class DetailFragment : Fragment() {
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentDetailBinding.inflate(inflater, container, false)
         val store = arguments?.getSerializable("store") as? Store
         store?.let {

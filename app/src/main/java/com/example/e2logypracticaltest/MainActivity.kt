@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
                 onBackPressed()
                 true
             }
-
             else -> super.onOptionsItemSelected(item)
         }
     }
